@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GymMembersApplication</string>
+    <string name="add_member">Add Member</string>
+    <string name="cancel">Cancel</string>
+    <string name="fitzgerald_s_gym">FitzGerald\'s Gym</string>
+    <string name="add_members">Add Members</string>
+    <string name="name">Name</string>
+    <string name="plan">Plan</string>
+    <string name="returnButton">Return</string>
+    <string name="empty_string" />
+</resources>

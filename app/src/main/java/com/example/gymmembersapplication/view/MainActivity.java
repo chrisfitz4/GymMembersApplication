@@ -54,11 +54,8 @@ public class MainActivity extends AppCompatActivity implements MemberRecyclerVie
 
         ButterKnife.bind(this);
 
-        members = new ArrayList<GymMember>();
-
         file = new File(Environment.getRootDirectory(),Constants.FILE_NAME);
         drawRecyclerView();
-
 
 
         addMembersButton.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements MemberRecyclerVie
     private void getMembersFromFile(){
         //file = new File(Environment.getRootDirectory(),Constants.FILE_NAME);
         try{
+            members = new ArrayList<GymMember>();
             FileInputStream fileInputStream = openFileInput(Constants.FILE_NAME);
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
